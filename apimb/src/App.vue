@@ -4,9 +4,26 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <div class="AppFooter">
+      <FooterComp/>
+    </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import FooterComp from '@/components/FooterComp.vue'
+
+export default {
+  setup() {
+    
+  },
+  name: 'app',
+  components: {
+    FooterComp
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -15,6 +32,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 75rem;
 }
 
 #nav {
@@ -28,5 +46,9 @@
       color: #42b983;
     }
   }
+}
+
+.AppFooter {
+  bottom: 0;
 }
 </style>
