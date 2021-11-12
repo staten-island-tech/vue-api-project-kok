@@ -4,10 +4,10 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <router-view/>
     <div class="AppFooter">
       <FooterComp/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 75rem;
+  height: auto;
 }
 
 #nav {
@@ -50,5 +50,7 @@ export default {
 
 .AppFooter {
   bottom: 0;
+  position:sticky;
 }
+
 </style>
