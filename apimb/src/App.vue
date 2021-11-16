@@ -6,13 +6,13 @@
     </div>
     <router-view/>
     <div class="AppFooter">
-      <FooterComp/>
+      <!-- <FooterComp/> -->
     </div>
   </div>
 </template>
 
 <script>
-import FooterComp from '@/components/FooterComp.vue'
+// import FooterComp from '@/components/FooterComp.vue'
 
 export default {
   setup() {
@@ -20,7 +20,7 @@ export default {
   },
   name: 'app',
   components: {
-    FooterComp
+    // FooterComp
   }
 }
 </script>

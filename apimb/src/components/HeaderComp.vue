@@ -1,13 +1,13 @@
 <template>
-  <div class="hello">
+  <div class="headerDiv">
+    <h2>NYPL API Searcher</h2>
     <h1>{{ msg }}</h1>
-    <h2></h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HeaderComp',
   props: {
     msg: String
   }
@@ -16,8 +16,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.headerDiv {
+    background-color:rgb(220, 20, 10);
+    top: 0;
+    position: relative;
+}
+
 h3 {
   margin: 40px 0 0;
+}
+h2 {
+    text-decoration: underline;
+    font-size: 10mm;
+    color: white;
+    text-decoration-color: white;
+}
+h1 {
+    font-size: 7mm;
+    color: white;
+    text-decoration-color: white;
 }
 ul {
   list-style-type: none;

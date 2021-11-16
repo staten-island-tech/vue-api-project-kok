@@ -1,7 +1,9 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2></h2>
+  <div class="meme">
+      <div>
+        <h1>{{ msg }}</h1>
+        <img alt="1984 meme" src="../assets/1984LG.png">
+      </div>
   </div>
 </template>
 

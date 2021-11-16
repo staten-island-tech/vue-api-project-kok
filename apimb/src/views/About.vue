@@ -1,6 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <HeaderComp msg="This was originally an about page"/>
     <img alt="1984 meme" src="../assets/1984LG.png">
+    <FooterComp/>
   </div>
 </template>
+
+<script>
+import HeaderComp from '@/components/HeaderComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
+
+export default {
+  name: '1984',
+  components: {
+    HeaderComp,
+    FooterComp
+  }
+}
+</script>
+
