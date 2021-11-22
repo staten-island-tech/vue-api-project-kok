@@ -15,18 +15,6 @@ export default {
     return {
       
     }
-  },
-  mounted() {
-    fetch("http://api.repo.nypl.org/api/v1/items/search?q=cats&publicDomainOnly=true", {
-    method: "GET",
-    headers: {
-      Authorization: 'Authorization: Token token="abcdefghijklmn"'
-    }
-  })
-    .then(res => res.json())
-    .then(response => {
-      console.log(response);
-    });
   }
 }
 </script>

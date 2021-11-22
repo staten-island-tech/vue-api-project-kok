@@ -11,8 +11,22 @@ export default {
   props: {
     msg: String
   }
+  // mounted() {
+  //   fetch("http://api.repo.nypl.org/api/v1/items/search?q=cats&publicDomainOnly=true", {
+  //   method: "GET",
+  //   headers: {
+  //     Authorization: 'Authorization: Token token="abcdefghijklmn"'
+  //   }
+  // })
+  //   .then(res => res.json())
+  //   .then(response => {
+  //     console.log(response);
+  //   });
+  // }
 }
 </script>
+
+http://api.steampowered.com/ISteamApps/GetAppList/v2
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
@@ -31,3 +45,4 @@ a {
   color: #42b983;
 }
 </style>
+
