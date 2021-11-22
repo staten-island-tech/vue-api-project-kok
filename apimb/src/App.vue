@@ -37,8 +37,6 @@ export default {
 
 #nav {
   padding: 30px;
-
-  
 }
 
 .AppFooter {
