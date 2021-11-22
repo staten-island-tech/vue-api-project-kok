@@ -10,6 +10,17 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+    fetch('http://store.steampowered.com/api/appdetails?appids=10', {
+      method: 'GET'
+    })
+    .then(res => {
+      return res.json();
+    })
+    .then(res => {
+      console.log(res);
+    }) 
   }
   // mounted() {
   //   fetch("http://api.repo.nypl.org/api/v1/items/search?q=cats&publicDomainOnly=true", {

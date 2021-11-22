@@ -1,6 +1,6 @@
 <template>
   <div class="headerDiv">
-    <h2>NYPL API Searcher</h2>
+    <h2>..... API Searcher</h2>
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -23,9 +23,9 @@ export default {
 <style >
 
 .headerDiv {
-    background-color:rgb(220, 20, 10);
-    top: 0;
-    position: relative;
+  background-color:blue;
+  top: 0;
+  position: relative;
 }
 
 h3 {
