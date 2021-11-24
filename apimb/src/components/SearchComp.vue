@@ -36,6 +36,9 @@ export default {
 <style >
 .searchBody{
   background-color: lightskyblue;
+  min-height:20rem;
+  padding: 1rem;
+  margin:2rem;
 }
 h3 {
   margin: 40px 0 0;

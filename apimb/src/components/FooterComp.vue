@@ -1,7 +1,7 @@
 <template>
   <div class="footerDiv">
       <div class="otherCrap">
-        <h3>Other crap I made</h3>
+        <h6>Other crap I made</h6>
         <ul>
             <li><a href="https://vigorous-knuth-582102.netlify.app/" target="_blank" rel="noopener">Pen over Distance Calc</a></li>
             <li><a href="https://pedantic-borg-565c2c.netlify.app/" target="_blank" rel="noopener">Chernobyl tour</a></li>
@@ -26,20 +26,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 .footerDiv {
-    background-color: black;
-    height:10rem;
-    bottom: 0;
-    position: relative;
-
+  background-color: black;
+  min-height:7rem;
+  padding:.5rem;
 }
 
 .otherCrap {
-    margin: 1 rem;
-    padding: .25rem;
+  margin: 1rem;
+  padding: .25rem;
 }
 
-h3 {
-  margin: 40px 0 0;
+h6{
+  margin: 10px 0 0;
   text-decoration: underline;
 }
 ul {

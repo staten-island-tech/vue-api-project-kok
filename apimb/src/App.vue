@@ -6,13 +6,13 @@
     </div>
     <router-view/>
     <div class="AppFooter">
-      <!-- <FooterComp/> -->
+      <FooterComp/>
     </div>
   </div>
 </template>
 
 <script>
-// import FooterComp from '@/components/FooterComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
 
 export default {
   setup() {
@@ -20,7 +20,7 @@ export default {
   },
   name: 'app',
   components: {
-    // FooterComp
+    FooterComp
   }
 }
 </script>
@@ -33,15 +33,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: auto;
+  background-image:url('https://media0.giphy.com/media/wvQIqJyNBOCjK/200.gif');
+  background-repeat: repeat;
+  min-height: 70rem;
 }
 
 #nav {
-  padding: 30px;
+  padding: 1rem;
+  background-color:slategray;
 }
 
 .AppFooter {
   bottom: 0;
-  position:sticky;
+  width:100%;
+  position:fixed;
 }
 
 </style>
