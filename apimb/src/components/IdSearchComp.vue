@@ -1,5 +1,5 @@
 <template>
-  <div class="searchBody">
+  <div class="IdsearchBody">
     <h1>{{ msg }}</h1>
     <h2></h2>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'SearchComp',
+  name: 'IdSearchComp',
   props: {
     msg: String
   },
