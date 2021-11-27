@@ -14,7 +14,7 @@ export default {
   data () {
     return {
       apiKey: 10,
-      // apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey
+      apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey
     }
   },
   mounted() {
