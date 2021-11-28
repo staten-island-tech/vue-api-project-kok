@@ -3,10 +3,11 @@
     <h1>{{ msg }}</h1>
     <h2></h2>
     <div class=input>
+      <input v-model="this.apiKey" placeholder="Input SteamAPP ID">
       <button @click="BYIDBTclicked()">Search </button>
     </div>
     <div class='output'>
-      <p>{{this.afterSearch}}</p>
+      <p>{{this.searchResults}}</p>
     </div>
   </div>
 </template>
@@ -19,14 +20,16 @@ export default {
   },
   data () {
     return {
-      apiKey:'10',
-      apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey,
+      apiKey:'',
+      apiSearchtst:'',
+      apiSearch: '',
       searchResults:'',
       afterSearch: '',
     }
   },
   methods: {
     BYIDBTclicked () {
+      this.apiSearch = 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey
       fetch(this.apiSearch, {
       method: 'GET',
       headers: {
