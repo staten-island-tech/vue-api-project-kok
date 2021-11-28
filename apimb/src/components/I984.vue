@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'l984',
+  name: 'I984',
   props: {
     msg: String
   },
@@ -25,12 +25,17 @@ export default {
     return {
       testvar1: 10,
       testvar2: '50',
-      testcar3: ''
+      testcar3: '',
+      apiKey:'10',
+      apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey,
+      searchResults:'',
+      afterSearch: '',
     }
   },
   methods: {
     testClicked () {
       this.testvar1 = this.testvar1 -3
+      this.aftersearch = this.apiSearch + this.apiKey
       if (this.testvar1 <0){
         this.testvar1 = 30
         alert("shit happened")

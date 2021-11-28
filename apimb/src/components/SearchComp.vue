@@ -22,7 +22,7 @@ export default {
       apiKey:'10',
       apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey,
       searchResults:'',
-      afterSearch: '34',
+      afterSearch: '',
     }
   },
   methods: {
