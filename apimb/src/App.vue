@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">1984</router-link>
+      <router-link to="/IDSR">ID Search</router-link> |
+      <router-link to="/1984">1984</router-link>
     </div>
     <router-view/>
     <div class="AppFooter">
@@ -35,7 +36,7 @@ export default {
   height: auto;
   background-image:url('https://media0.giphy.com/media/wvQIqJyNBOCjK/200.gif');
   background-repeat: repeat;
-  min-height: 70rem;
+  min-height: 100rem;
 }
 
 #nav {

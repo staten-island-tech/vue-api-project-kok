@@ -1,5 +1,5 @@
 <template>
-  <div class="searchBody">
+  <div class="IDsearchBody">
     <h1>{{ msg }}</h1>
     <h2></h2>
     <div class=input>
@@ -19,15 +19,13 @@ export default {
   },
   data () {
     return {
-      apiKey:'10',
-      apiSearch: 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey,
       searchResults:'',
       afterSearch: '34',
     }
   },
   methods: {
     BYIDBTclicked () {
-      fetch(this.apiSearch, {
+      fetch('http://api.steampowered.com/ISteamApps/GetAppList/v2', {
       method: 'GET',
       headers: {
         // appids_key: this.apiKeyi
@@ -38,34 +36,14 @@ export default {
     })
     .then(res => {
       console.log(res);
-      this.searchResults = res
-      console.log('checkinGnwefusbndfuenb');
-      console.log(this.searchResults);
     }) 
     }
   },
-  // mounted() {
-  //   fetch(this.apiSearch, {
-  //     method: 'GET',
-  //     headers: {
-  //       // appids_key: this.apiKeyi
-  //     }
-  //   })
-  //   .then(res => {
-  //     return res.json();
-  //   })
-  //   .then(res => {
-  //     console.log(res);
-  //     this.searchResults = res
-  //     console.log('checkinGnwefusbndfuenb');
-  //     console.log(this.searchResults);
-  //   }) 
-  // }
 }
 </script>
 <style >
-.searchBody{
-  background-color: lightskyblue;
+.IDsearchBody{
+  background-color: gray;
   min-height:20rem;
   padding: 1rem;
   margin:2rem;

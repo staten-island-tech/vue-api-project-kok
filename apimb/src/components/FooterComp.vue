@@ -32,7 +32,7 @@ export default {
 }
 
 .otherCrap {
-  margin: 1rem;
+  margin: .25rem;
   padding: .25rem;
 }
 
