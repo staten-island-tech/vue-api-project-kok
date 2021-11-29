@@ -43,6 +43,7 @@ export default {
       alert("'IDSR' works, a very laggy mess of raw strings")
       alert("'IDSR2' is a last minute attempt to accomplish some catagories in the rubric. Its not functional")
       alert("'1984' is... ah... just there.")
+      alert("Also, you need an extension that fixed the CORS issue. RIP")
     }
   }
 }
