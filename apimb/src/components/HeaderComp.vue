@@ -1,7 +1,7 @@
 <template>
   <div class="headerDiv">
     <div class="headerDivText" id="HDD">
-      <h2>..... API Searcher</h2>
+      <h2>SteamAppID API Searcher</h2>
       <h1>{{ msg }}</h1>
     </div>
     <div class="headerDivIcon" id="HDD">

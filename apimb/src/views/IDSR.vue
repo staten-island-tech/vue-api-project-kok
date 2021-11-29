@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HeaderComp msg="Main page (Search All)"/>
+    <HeaderComp msg=" CheatSheet (Giant list of IDs. Good luck trying to find the correct one.)"/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <IDSearchComp msg="Hath merci on thyn PC"/>
   </div>

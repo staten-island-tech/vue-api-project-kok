@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <HeaderComp msg="This was originally an about page"/>
+    <HeaderComp msg="This was originally an about page. It was improved"/>
     <I984/>
   </div>
 </template>

@@ -1,9 +1,8 @@
 <template>
   <div class="home">
-    <HeaderComp msg="Main page (Search All)"/>
+    <HeaderComp msg="Home (Search for games by ID)"/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <SearchComp msg="Crap is operational but most likely broken"/>
-    <p>{{this.searchResults}}</p>
   </div>
 </template>
 
