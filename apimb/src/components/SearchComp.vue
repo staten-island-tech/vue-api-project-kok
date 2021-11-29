@@ -3,11 +3,11 @@
     <h1>{{ msg }}</h1>
     <h2></h2>
     <div class=input>
-      <input v-model="this.apiKey" placeholder="Input SteamAPP ID">
       <button @click="BYIDBTclicked()">Search </button>
+      <input type="number" id="" class="inputForm" placeholder="Input SteamAPP ID" min='1' v-model="apiKey"><br>
     </div>
     <div class='output'>
-      <p>{{this.searchResults}}</p>
+      <p>{{searchResults}}</p>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
       apiKey:'',
       apiSearchtst:'',
       apiSearch: '',
-      searchResults:'',
+      searchResults:[],
       afterSearch: '',
     }
   },
@@ -31,22 +31,24 @@ export default {
     BYIDBTclicked () {
       this.apiSearch = 'http://store.steampowered.com/api/appdetails?appids=' + this.apiKey
       fetch(this.apiSearch, {
-      method: 'GET',
-      headers: {
-        // appids_key: this.apiKeyi
-      }
-    })
-    .then(res => {
+        method: 'GET',
+      })
+      .then(res => {
       return res.json();
-    })
-    .then(res => {
-      console.log(res);
-      this.searchResults = res
-      console.log('checkinGnwefusbndfuenb');
-      console.log(this.searchResults);
-    }) 
+      })
+      .then(res => {
+        console.log(res);
+        this.searchResults = res
+        // console.log('checkinGnwefusbndfuenb');
+        // console.log(this.searchResults);
+      })
+      setTimeout(100); {
+        if (this.searchResults.includes('{ "success": false }')){
+          alert('Invalid AppID, input another. Try 10 to get CSGO')
+        }
+      }
     }
-  },
+  }
   // mounted() {
   //   fetch(this.apiSearch, {
   //     method: 'GET',

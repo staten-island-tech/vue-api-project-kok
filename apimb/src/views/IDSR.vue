@@ -2,7 +2,7 @@
   <div class="home">
     <HeaderComp msg="Main page (Search All)"/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <IDSearchComp msg="delted entire compnent beofre, hope it got restored?"/>
+    <IDSearchComp msg="Hath merci on thyn PC"/>
   </div>
 </template>
 
@@ -16,6 +16,6 @@ export default {
   components: {
     HeaderComp,
     IDSearchComp
-  }
+  },
 }
 </script>

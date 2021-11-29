@@ -3,6 +3,7 @@
     <HeaderComp msg="Main page (Search All)"/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <SearchComp msg="Crap is operational but most likely broken"/>
+    <p>{{this.searchResults}}</p>
   </div>
 </template>
 
